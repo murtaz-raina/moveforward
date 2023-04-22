@@ -17,6 +17,7 @@
         width: 40px;
         height: 40px;
         position: relative;
+        background-size: 100% 100%;
         .n-website-logo-splash {
           position: absolute;
           top: 9.71px;
@@ -26,7 +27,7 @@
         }
       }
       .n-website-logo-name {
-        width: 267.29px;
+        max-width: 267.29px;
         height: 28.26px;
       }
     }
@@ -41,7 +42,7 @@
       letter-spacing: -0.015em;
       color: #ffffff;
       max-width: 1065.11px;
-      height: 320px;
+      min-height: 320px;
       margin-left: 180px;
       margin-top: 54px;
     }
@@ -127,19 +128,22 @@
   max-width: 1240px;
   display: flex;
   flex-direction: row;
-  gap: 24px;
+//   gap: 24px;
+column-gap: 4%;
   margin: 48px auto 0px;
   flex-wrap: wrap;
   .n-flex-trance {
-    width: 608px;
+    // width: 608px;
+    width: 48%;
     height: 832px;
-    flex: 1 0 auto;
+    // flex: 1 0 auto;
     background-size: 100% 100%;
   }
   .n-flex-loop {
-    width: 608px;
+    // width: 608px;
+    width: 48%;
     height: 832px;
-    flex: 1 0 auto;
+    // flex: 1 0 auto;
     background-size: 100% 100%;
   }
 }
@@ -210,6 +214,7 @@
       width: 40px;
       height: 40px;
       position: relative;
+      background-size: 100% 100%;
       .n-website-logo-splash {
         position: absolute;
         top: 9.71px;
@@ -219,7 +224,7 @@
       }
     }
     .n-website-logo-name {
-      width: 267.29px;
+      max-width: 267.29px;
       height: 28.26px;
     }
   }
@@ -235,4 +240,119 @@
     margin-top: 33px;
     margin-left: 192px;
   }
+}
+
+
+@media (max-width: 900px) {
+.n-container{
+    .n-page-top{
+        .n-logo{
+            margin-left: 80px;
+        }
+        .n-page-heading{
+            margin-left: 80px;
+        }
+        .n-arrow-down-container{
+            margin-left: 80px;
+        }
+    }
+    .n-description{
+        margin-left: 80px;
+    }
+}
+.n-stay-tuned-for-me-container{
+    margin-left: 100px;
+}
+
+}
+
+@media (max-width: 600px) {
+    .n-container{
+        .n-page-top{
+            .n-logo{
+                margin-left: 30px;
+                .n-website-logo-name{
+                    width: 200px;
+                }
+            }
+            .n-page-heading{
+                margin-left: 30px;
+                font-size: 36px;
+                line-height: 60px;
+            }
+            .n-arrow-down-container{
+                margin-left: 30px;
+            }
+        }
+        .n-description{
+            margin-left: 30px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    .n-stay-tuned-for-me-container{
+        margin-left: 30px;
+    }
+    .n-flex-trance-loop{
+        flex-direction: column;
+        gap: 28px;
+        .n-flex-trance{
+            width: 100%;
+        }
+        .n-flex-loop{
+            width: 100%;
+        }
+    }
+    .n-stay-tuned-for-me-container{
+        margin-left: 30px;
+        .n-stay-tuned-for-me{
+            font-size: 36px;
+            line-height: 60px;
+        }
+        .n-flex-email-subscribe{
+            flex-direction: column;
+            row-gap: 28px;
+            .n-whats-your-email{
+                width: 200px;
+            }
+            .n-subscribe{
+                width: 245px;
+            }
+        }
+    }
+    .n-footer{
+        height: 100vh;
+        .n-logo{
+            margin-left: 30px;
+            margin-top: 400px;
+            .n-website-logo-name{
+                width: 200px;
+            }
+        }
+        .n-footer-text{
+            margin-left: 30px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    .n-copper-heading{
+        margin-left: 30px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+    .n-copper-description{
+        margin-left: 30px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .n-learn-more{
+        margin-left: 30px;
+        width: 134px;
+        height: 37px;
+        font-size: 15px;
+        line-height: 16px;
+    }
+    
+
 }
