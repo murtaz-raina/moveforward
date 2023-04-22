@@ -1,0 +1,238 @@
+.n-container {
+  margin: auto;
+  max-width: 1440px;
+  background-color: #e5e5e5;
+  .n-page-top {
+    background-image: url("../assets/landing.png");
+    width: 100%;
+    min-height: 824px;
+    background-size: 100% 100%;
+    padding: 1px 0px;
+    .n-logo {
+      display: flex;
+      column-gap: 18.08px;
+      margin-top: 168px;
+      margin-left: 180px;
+      .n-website-logo {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        .n-website-logo-splash {
+          position: absolute;
+          top: 9.71px;
+          bottom: 9.71px;
+          left: 12.48px;
+          right: 12.49px;
+        }
+      }
+      .n-website-logo-name {
+        width: 267.29px;
+        height: 28.26px;
+      }
+    }
+    .n-page-heading {
+      font-family: "Maison Neue Extended TRIAL";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 56px;
+      line-height: 80px;
+      display: flex;
+      align-items: center;
+      letter-spacing: -0.015em;
+      color: #ffffff;
+      max-width: 1065.11px;
+      height: 320px;
+      margin-left: 180px;
+      margin-top: 54px;
+    }
+    .n-arrow-down-container {
+      margin-top: 80px;
+      margin-left: 180px;
+      .n-arrow-down {
+        height: 48px;
+        cursor: pointer;
+      }
+    }
+  }
+  .n-description {
+    font-family: "Maison Neue Extended TRIAL";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.015em;
+    color: #000000;
+    max-width: 923.67px;
+    margin-top: 134px;
+    margin-left: 180px;
+  }
+}
+
+.n-copper-heading {
+  max-width: 1065.11px;
+  font-family: "Maison Neue Extended TRIAL";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-left: 80px;
+  margin-top: 88px;
+}
+
+.n-copper-description {
+  max-width: 867.4px;
+  font-family: "Maison Neue Extended TRIAL";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #ffffff;
+  margin-left: 80px;
+  margin-top: 32px;
+}
+
+.n-learn-more {
+  width: 206.12px;
+  height: 56px;
+  background: #d9d9d9;
+  border-radius: 48px;
+  margin-left: 80px;
+  margin-top: 49px;
+  border: 0;
+  font-family: "Maison Neue Extended TRIAL";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.015em;
+  color: #000000;
+  justify-content: center;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 0 10px -1px #d9d9d9;
+  }
+}
+
+.n-flex-trance-loop {
+  max-width: 1240px;
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin: 48px auto 0px;
+  flex-wrap: wrap;
+  .n-flex-trance {
+    width: 608px;
+    height: 832px;
+    flex: 1 0 auto;
+    background-size: 100% 100%;
+  }
+  .n-flex-loop {
+    width: 608px;
+    height: 832px;
+    flex: 1 0 auto;
+    background-size: 100% 100%;
+  }
+}
+
+.n-stay-tuned-for-me-container {
+  margin-left: 200px;
+  margin-top: 168px;
+  .n-stay-tuned-for-me {
+    font-family: "Maison Neue Extended TRIAL";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: -0.015em;
+    color: #000000;
+  }
+  .n-flex-email-subscribe {
+    display: flex;
+    column-gap: 28px;
+    margin-top: 40px;
+    .n-whats-your-email {
+      width: 316.6px;
+      font-family: "Maison Neue Extended TRIAL";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      color: #383e41;
+      padding: 15px 20.5px;
+    }
+    .n-subscribe {
+      border: 0;
+      cursor: pointer;
+      width: 188.24px;
+      height: 56px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(220.18deg, #b721ff -18.56%, #21d4fd 86.26%);
+      border-radius: 69px;
+      font-family: "Maison Neue Extended TRIAL";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 16px;
+      color: #eeeeee;
+      &:hover {
+        box-shadow: 0 0 10px -1px #b721ff;
+      }
+    }
+  }
+}
+
+.n-footer {
+  width: 100%;
+  height: 824px;
+  background-size: 100% 100%;
+  padding: 1px 0px;
+  margin-top: 76px;
+  .n-logo {
+    margin-top: 618px;
+    display: flex;
+    column-gap: 18.08px;
+    margin-left: 192px;
+    .n-website-logo {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      .n-website-logo-splash {
+        position: absolute;
+        top: 9.71px;
+        bottom: 9.71px;
+        left: 12.48px;
+        right: 12.49px;
+      }
+    }
+    .n-website-logo-name {
+      width: 267.29px;
+      height: 28.26px;
+    }
+  }
+  .n-footer-text {
+    max-width: 923.67px;
+    font-family: "Maison Neue Extended TRIAL";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.015em;
+    color: #ffffff;
+    margin-top: 33px;
+    margin-left: 192px;
+  }
+}

@@ -1,0 +1,11 @@
+<div
+  [ngStyle]="{
+    'background-image': 'url(' + cardContent.imageUrl + ')',
+    'max-width': cardContent.width + 'px',
+    height: cardContent.height + 'px',
+    margin: cardContent.margin
+  }"
+  class="n-card"
+>
+  <ng-content></ng-content>
+</div>
