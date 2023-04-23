@@ -271,25 +271,25 @@ column-gap: 4%;
 @media (max-width: 600px) {
     .n-container{
         .n-page-top{
-          height: 100vh;
+          height: auto;
           min-height: fit-content;
             .n-logo{
-                margin-left: 15px;
-                margin-top: 100px;
+                width: 95%;
+                margin: 100px auto 0px;
                 .n-website-logo-name{
                     width: 200px;
                 }
             }
             .n-page-heading{
-                margin-left: 15px;
+                width: 95%;
+                margin :54px auto 0px;
                 font-size: 25px;
                 line-height: 50px;
                 min-height: fit-content;
-                width: 90%;
             }
             .n-arrow-down-container{
-                margin-left: 15px;
-                margin-top: 40px;
+                width: 95%;
+                margin: 60px auto 100px;
             }
         }
         .n-description{
@@ -304,12 +304,10 @@ column-gap: 4%;
           text-align: justify;
         }
     }
-    .n-stay-tuned-for-me-container{
-        margin-left: 30px;
-    }
     .n-flex-trance-loop{
         // flex-direction: column;
         gap: 4%;
+        width: 95%;
         .n-flex-trance{
             width: 48%;
             height: auto;
@@ -320,54 +318,55 @@ column-gap: 4%;
         }
     }
     .n-stay-tuned-for-me-container{
-        margin-left: 15px;
-        margin-top: 100px;
+      margin: 100px auto 0px;
+      width: 95%;
         .n-stay-tuned-for-me{
-            font-size: 20px;
+            font-size: 28px;
             line-height: 40px;
         }
         .n-flex-email-subscribe{
             flex-direction: column;
             row-gap: 28px;
             .n-whats-your-email{
-                width: 200px;
+                width: 100%;
+                box-sizing: border-box;
             }
             .n-subscribe{
-                width: 245px;
+                width: 100%;
             }
         }
     }
     .n-footer{
         height: auto;
         .n-logo{
-            margin-left: 15px;
-            margin-top: 400px;
+          width: 95%;
+            margin: 400px auto 0px;
             .n-website-logo-name{
                 width: 200px;
             }
         }
         .n-footer-text{
-            margin-left: 15px;
-            font-size: 12px;
-            line-height: 20px;
-            margin-bottom: 50px;
+            width: 95%;
+            font-size: 17px;
+            line-height: 22px;
+            margin: 33px auto  50px;
         }
     }
 
     .n-copper-heading{
-        margin-left: 15px;
-        font-size: 16px;
+      width: 95%;
+        font-size: 18px;
         line-height: 30px;
-        margin-top: 30px;
+        margin: 30px auto 0px;
     }
     .n-copper-description{
-        margin-left: 15px;
-        font-size: 8px;
+        width: 95%;
+        font-size: 11px;
         line-height: 20px;
-        margin-top: 16px;
+        margin: 16px auto 0px;
     }
     .n-learn-more{
-        margin-left: 15px;
+        margin-left: 2.5%;
         width: 80px;
         height: 20px;
         font-size: 10px;
