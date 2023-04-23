@@ -27,11 +27,16 @@
       <img class="n-arrow-down" src="assets/arrow-down.png" alt="arrow-down" />
     </div>
   </div>
-  <div class="n-description">
+  <div class="n-description" *ngIf="width>600">
     We’re on a mission to bring the best of tech products that are solving very
     <br />
     niche problems of your industry. We keep it accessible for you to afford and
     <br />
+    we like to keep things simple. Here’re a few to start off.
+  </div>
+  <div class="n-description n-description-mob" *ngIf="width < 600">
+    We’re on a mission to bring the best of tech products that are solving very
+    niche problems of your industry. We keep it accessible for you to afford and
     we like to keep things simple. Here’re a few to start off.
   </div>
   <div>

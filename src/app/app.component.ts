@@ -9,6 +9,7 @@ import { SharedService } from 'src/app/services/shared.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  width = window.innerWidth;
   title = 'moveforward-tech';
   email = new FormControl(null, [
     Validators.required,

@@ -2,3 +2,10 @@
   background-size: 100% 100%;
   padding: 1px 0px;
 }
+
+@media (max-width: 600px){
+.n-card{
+  height: auto !important;
+  margin: 60px auto 0px !important;
+}
+}

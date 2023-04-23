@@ -13,6 +13,7 @@
       column-gap: 18.08px;
       margin-top: 168px;
       margin-left: 180px;
+      align-items: center;
       .n-website-logo {
         width: 40px;
         height: 40px;
@@ -210,6 +211,7 @@ column-gap: 4%;
     display: flex;
     column-gap: 18.08px;
     margin-left: 192px;
+    align-items: center;
     .n-website-logo {
       width: 40px;
       height: 40px;
@@ -269,45 +271,60 @@ column-gap: 4%;
 @media (max-width: 600px) {
     .n-container{
         .n-page-top{
+          height: 100vh;
+          min-height: fit-content;
             .n-logo{
-                margin-left: 30px;
+                margin-left: 15px;
+                margin-top: 100px;
                 .n-website-logo-name{
                     width: 200px;
                 }
             }
             .n-page-heading{
-                margin-left: 30px;
-                font-size: 36px;
-                line-height: 60px;
+                margin-left: 15px;
+                font-size: 25px;
+                line-height: 50px;
+                min-height: fit-content;
+                width: 90%;
             }
             .n-arrow-down-container{
-                margin-left: 30px;
+                margin-left: 15px;
+                margin-top: 40px;
             }
         }
         .n-description{
-            margin-left: 30px;
-            font-size: 16px;
-            line-height: 21px;
+            margin-top: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 14px;
+            line-height: 19px;
+            width: 80%;
+        }
+        .n-description-mob{
+          text-align: justify;
         }
     }
     .n-stay-tuned-for-me-container{
         margin-left: 30px;
     }
     .n-flex-trance-loop{
-        flex-direction: column;
-        gap: 28px;
+        // flex-direction: column;
+        gap: 4%;
         .n-flex-trance{
-            width: 100%;
+            width: 48%;
+            height: auto;
         }
         .n-flex-loop{
-            width: 100%;
+            width: 48%;
+            height: auto;
         }
     }
     .n-stay-tuned-for-me-container{
-        margin-left: 30px;
+        margin-left: 15px;
+        margin-top: 100px;
         .n-stay-tuned-for-me{
-            font-size: 36px;
-            line-height: 60px;
+            font-size: 20px;
+            line-height: 40px;
         }
         .n-flex-email-subscribe{
             flex-direction: column;
@@ -321,37 +338,42 @@ column-gap: 4%;
         }
     }
     .n-footer{
-        height: 100vh;
+        height: auto;
         .n-logo{
-            margin-left: 30px;
+            margin-left: 15px;
             margin-top: 400px;
             .n-website-logo-name{
                 width: 200px;
             }
         }
         .n-footer-text{
-            margin-left: 30px;
-            font-size: 16px;
-            line-height: 21px;
+            margin-left: 15px;
+            font-size: 12px;
+            line-height: 20px;
+            margin-bottom: 50px;
         }
     }
 
     .n-copper-heading{
-        margin-left: 30px;
-        font-size: 32px;
-        line-height: 36px;
+        margin-left: 15px;
+        font-size: 16px;
+        line-height: 30px;
+        margin-top: 30px;
     }
     .n-copper-description{
-        margin-left: 30px;
-        font-size: 13px;
+        margin-left: 15px;
+        font-size: 8px;
         line-height: 20px;
+        margin-top: 16px;
     }
     .n-learn-more{
-        margin-left: 30px;
-        width: 134px;
-        height: 37px;
-        font-size: 15px;
-        line-height: 16px;
+        margin-left: 15px;
+        width: 80px;
+        height: 20px;
+        font-size: 10px;
+        line-height: 12px;
+        margin-top: 16px;
+        margin-bottom: 30px;
     }
     
 
