@@ -161,6 +161,16 @@ column-gap: 4%;
     letter-spacing: -0.015em;
     color: #000000;
   }
+  .n-thank-you{
+    font-family: "Maison Neue Extended TRIAL";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.015em;
+    color: #000000;
+    margin-top: 40px;
+  }
   .n-flex-email-subscribe {
     display: flex;
     column-gap: 28px;
@@ -172,8 +182,8 @@ column-gap: 4%;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
-      display: flex;
-      align-items: center;
+      // display: flex;
+      // align-items: center;
       color: #383e41;
       padding: 15px 20.5px;
     }
@@ -323,6 +333,10 @@ column-gap: 4%;
         .n-stay-tuned-for-me{
             font-size: 28px;
             line-height: 40px;
+        }
+        .n-thank-you{
+          font-size: 18px;
+          line-height: 24px;
         }
         .n-flex-email-subscribe{
             flex-direction: column;
