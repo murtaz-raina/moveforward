@@ -27,14 +27,14 @@
       <img class="n-arrow-down" src="assets/arrow-down.png" alt="arrow-down" />
     </div>
   </div>
-  <div class="n-description" *ngIf="width>600">
+  <div class="n-description" *ngIf="width>750">
     We’re on a mission to bring the best of tech products that are solving very
     <br />
     niche problems of your industry. We keep it accessible for you to afford and
     <br />
     we like to keep things simple. Here’re a few to start off.
   </div>
-  <div class="n-description n-description-mob" *ngIf="width < 600">
+  <div class="n-description n-description-mob" *ngIf="width < 750">
     We’re on a mission to bring the best of tech products that are solving very
     niche problems of your industry. We keep it accessible for you to afford and
     we like to keep things simple. Here’re a few to start off.
@@ -50,7 +50,7 @@
     >
       <div class="n-copper-heading">
         Great customer service starts with
-        <span style="text-decoration: underline">Copper</span>:<br />
+        <span style="text-decoration: underline">Copper</span>:<br *ngIf="width>750"/>
         a heyday for connected customer journey.
       </div>
       <div class="n-copper-description">
@@ -74,7 +74,7 @@
       }"
     >
       <div class="n-copper-heading">
-        <u>Spot</u>: Ridiculously cheap MDR Solution for<br />
+        <u>Spot</u>: Ridiculously cheap MDR Solution for<br *ngIf="width>750" />
         small and medium size businesses.
       </div>
       <div class="n-copper-description">
@@ -122,7 +122,7 @@
       }"
     >
       <div class="n-copper-heading">
-        Secure. Cloud Native. SD-WAN. It’s called <br />
+        Secure. Cloud Native. SD-WAN. It’s called <br *ngIf="width>750" />
         <u>ChiefNET</u>.
       </div>
       <div class="n-copper-description">
@@ -145,7 +145,7 @@
       }"
     >
       <div class="n-copper-heading">
-        <u>Private 5G</u> - For Industry 4.0. <br />
+        <u>Private 5G</u> - For Industry 4.0. <br *ngIf="width>750"/>
         Revolutionize.
       </div>
       <div class="n-copper-description">
