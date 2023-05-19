@@ -8,11 +8,11 @@ import { SuccessMessage } from 'src/app/models/shared.model';
   providedIn: 'root',
 })
 export class SharedService {
-//   private readonly apiUrl = environment.apiUrl;
+  // private readonly apiUrl = environment.apiUrl;
 
   isSubscribeFormSubmitted = false;
 
-//   constructor(private httpClient: HttpClient) {}
+  // constructor(private httpClient: HttpClient) {}
 
  
  
@@ -26,10 +26,11 @@ export class SharedService {
            
           });
     }
+
+    // subscribe(email: string|null): Observable<SuccessMessage> {
+    // return this.httpClient.post<SuccessMessage>(`${this.apiUrl}/v1/subscribe`, {
+    //   email,
+    // });
+  // }
 }
 
-// subscribe(email: string): Observable<SuccessMessage> {
-//     return this.httpClient.post<SuccessMessage>(`${this.apiUrl}/v1/subscribe`, {
-//       email,
-//     });
-//   }

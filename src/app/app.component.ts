@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { REGEX_PATTERNS } from 'src/app/constants/constants';
 import { SharedService } from 'src/app/services/shared.service';
@@ -17,7 +17,7 @@ export class AppComponent {
   ]);
   isFormSubmitted = false;
   isLoading = false;
-  constructor(private sharedService: SharedService) {
+  constructor(private sharedService: SharedService,private elementRef: ElementRef) {
     this.updateFormSubmittedStatus();
   }
 
@@ -43,5 +43,14 @@ export class AppComponent {
         },
       });
     }
+  }
+
+  copper():void{
+    window.open('https://hellocopper.ia', 'blank');
+  }
+
+  navigateToContactUs = ()=>{
+    const contactSection = this.elementRef.nativeElement.querySelector('#contact');
+    contactSection.scrollIntoView({ behavior: 'smooth' });
   }
 }

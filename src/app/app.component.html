@@ -61,7 +61,7 @@
         interactions and hello to seamless customer journeys, as Copper
         revolutionizes the way businesses deliver exceptional service.
       </div>
-      <button class="n-learn-more">Learn More</button>
+      <button class="n-learn-more" (click)="copper()">Learn More</button>
     </app-card>
   </div>
 
@@ -99,25 +99,27 @@
         <u>Traceline</u>
       </div>
       <div class="n-copper-description n-trace-description">
-        Elevate your manufacturing processes with Traceline, the
+        Elevate your manufacturing processes with Traceline
+        <!-- , the
         state-of-the-art WIP tracking and tracing solution. Gain real-time
         visibility into your production workflow, streamline operations, and
-        enhance efficiency.
+        enhance efficiency. -->
       </div>
-      <button class="n-learn-more">Contact Us</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">Contact Us</button>
     </div>
     <div class="n-flex-loop" style="background-image: url(assets/loop.png)">
       <div class="n-copper-heading">
         <u>Loop</u>
       </div>
       <div class="n-copper-description n-trace-description">
-        Revolutionize your water management practices with Loop. Experience
+        Revolutionize your water management practices with Loop.
+         <!-- Experience
         unparalleled transparency and real-time visibility of water consumption,
         while promoting sustainability and conservation. Unlock cost savings,
         optimize resource allocation, and contribute to a greener future with
-        Loop.
+        Loop. -->
       </div>
-      <button class="n-learn-more">Contact Us</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">Contact Us</button>
     </div>
   </div>
 
@@ -166,7 +168,7 @@
       <button class="n-learn-more">Learn More</button>
     </app-card>
   </div>
-  <div class="n-stay-tuned-for-me-container">
+  <div class="n-stay-tuned-for-me-container" id="contact">
     <div class="n-stay-tuned-for-me">
       And this is just the beginning.<br />
       Stay tuned for more cool.

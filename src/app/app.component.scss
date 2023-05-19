@@ -1,7 +1,7 @@
 .n-container {
   margin: auto;
   max-width: 1440px;
-  background-color: #e5e5e5;
+  background-color: #E5E5E5;
   .n-page-top {
     background-image: url("../assets/landing.png");
     width: 100%;
@@ -106,7 +106,7 @@
 .n-learn-more {
   width: 206.12px;
   height: 56px;
-  background: #d9d9d9;
+  background: #EDF2FC;;
   border-radius: 48px;
   margin-left: 80px;
   margin-top: 49px;
@@ -185,10 +185,9 @@ column-gap: 4%;
       font-weight: 400;
       font-size: 16px;
       line-height: 26px;
-      // display: flex;
-      // align-items: center;
       color: #383e41;
       padding: 15px 20.5px;
+      outline: none;
     }
     .n-subscribe {
       border: 0;

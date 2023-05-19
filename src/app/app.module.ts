@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from 'src/app/app.component';
 import { CardComponent } from 'src/app/components/card/card.component';
+// import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { CardComponent } from 'src/app/components/card/card.component';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    // HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
