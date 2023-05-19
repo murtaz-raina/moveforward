@@ -27,11 +27,11 @@
       <img class="n-arrow-down" src="assets/arrow-down.png" alt="arrow-down" />
     </div>
   </div>
-  <div class="n-description" *ngIf="width>750">
+  <div class="n-description" *ngIf="width > 750">
     We’re on a mission to bring the best of tech products that are solving very
-    <br />
+    <br *ngIf="width > 1100" />
     niche problems of your industry. We keep it accessible for you to afford and
-    <br />
+    <br *ngIf="width > 1100" />
     we like to keep things simple. Here’re a few to start off.
   </div>
   <div class="n-description n-description-mob" *ngIf="width < 750">
@@ -50,15 +50,16 @@
     >
       <div class="n-copper-heading">
         Great customer service starts with
-        <span style="text-decoration: underline">Copper</span>:<br *ngIf="width>750"/>
-        a heyday for connected customer journey.
+        <span style="text-decoration: underline">Copper</span>:<br
+          *ngIf="width > 1100"
+        />
+        A heyday for connected customer journey.
       </div>
       <div class="n-copper-description">
-        We’re on a mission to bring the best of tech products that are solving
-        very niche 
-        problems of your industry. We keep it accessible for you to afford and
-        we like to keep 
-        things simple. Here’re a few to start off.
+        Deliver faster, personalized, conversational customer support, no matter
+        which channel your customers choose. Say goodbye to fragmented
+        interactions and hello to seamless customer journeys, as Copper
+        revolutionizes the way businesses deliver exceptional service.
       </div>
       <button class="n-learn-more">Learn More</button>
     </app-card>
@@ -74,15 +75,16 @@
       }"
     >
       <div class="n-copper-heading">
-        <u>Spot</u>: Ridiculously cheap MDR Solution for<br *ngIf="width>750" />
+        <u>Spot</u>: Ridiculously cheap MDR Solution for<br
+          *ngIf="width > 1100"
+        />
         small and medium size businesses.
       </div>
       <div class="n-copper-description">
-        We’re on a mission to bring the best of tech products that are solving
-        very niche
-        problems of your industry. We keep it accessible for you to afford and
-        we like to keep 
-        things simple. Here’re a few to start off.
+        Supercharge your cybersecurity defenses. Experience unparalleled
+        protection as Spot MDR proactively identifies and neutralizes threats,
+        ensuring your organization stays one step ahead in the ever-evolving
+        threat landscape. All these, while being light on your wallet.
       </div>
       <button class="n-learn-more">Learn More</button>
     </app-card>
@@ -96,8 +98,11 @@
       <div class="n-copper-heading">
         <u>Traceline</u>
       </div>
-      <div class="n-copper-description">
-        Topnotch traceability for manufacturing factories.
+      <div class="n-copper-description n-trace-description">
+        Elevate your manufacturing processes with Traceline, the
+        state-of-the-art WIP tracking and tracing solution. Gain real-time
+        visibility into your production workflow, streamline operations, and
+        enhance efficiency.
       </div>
       <button class="n-learn-more">Contact Us</button>
     </div>
@@ -105,8 +110,12 @@
       <div class="n-copper-heading">
         <u>Loop</u>
       </div>
-      <div class="n-copper-description">
-        Future is IOT. Are you catching up?
+      <div class="n-copper-description n-trace-description">
+        Revolutionize your water management practices with Loop. Experience
+        unparalleled transparency and real-time visibility of water consumption,
+        while promoting sustainability and conservation. Unlock cost savings,
+        optimize resource allocation, and contribute to a greener future with
+        Loop.
       </div>
       <button class="n-learn-more">Contact Us</button>
     </div>
@@ -122,15 +131,14 @@
       }"
     >
       <div class="n-copper-heading">
-        Secure. Cloud Native. SD-WAN. It’s called <br *ngIf="width>750" />
+        Secure. Cloud Native. SD-WAN. It’s called <br *ngIf="width > 1100" />
         <u>ChiefNET</u>.
       </div>
       <div class="n-copper-description">
-        We’re on a mission to bring the best of tech products that are solving
-        very niche 
-        problems of your industry. We keep it accessible for you to afford and
-        we like to keep 
-        things simple. Here’re a few to start off.
+        Unlock the full potential of your network with ChiefNet. Experience
+        enhanced performance, agility, and security as ChiefNet seamlessly
+        connects your distributed locations. Embrace the future of seamless,
+        scalable, and reliable networking with ChiefNet.
       </div>
       <button class="n-learn-more">Learn More</button>
     </app-card>
@@ -145,42 +153,47 @@
       }"
     >
       <div class="n-copper-heading">
-        <u>Private 5G</u> - For Industry 4.0. <br *ngIf="width>750"/>
+        <u>Private 5G</u> : For Industry 4.0. <br *ngIf="width > 1100" />
         Revolutionize.
       </div>
       <div class="n-copper-description">
-        We’re on a mission to bring the best of tech products that are solving
-        very niche
-        problems of your industry. We keep it accessible for you to afford and
-        we like to keep 
-        things simple. Here’re a few to start off.
+        Experience lightning-fast speeds, ultra-low latency, and robust security
+        as you revolutionize your industrial operations. Unleash the full
+        potential of automation, IoT, and advanced analytics with our
+        state-of-the-art Private 5G, paving the way for a smarter, more
+        efficient future.
       </div>
       <button class="n-learn-more">Learn More</button>
     </app-card>
   </div>
   <div class="n-stay-tuned-for-me-container">
-    <div class="n-stay-tuned-for-me">And this is just the beginning.<br/>
-       Stay tuned for more cool.</div>
-       <div  class="n-flex-email-subscribe" *ngIf="!isFormSubmitted">
-        <input  type="text" placeholder="What's your email?" class="n-whats-your-email" [formControl]="email" />
-        <button class="n-subscribe"
+    <div class="n-stay-tuned-for-me">
+      And this is just the beginning.<br />
+      Stay tuned for more cool.
+    </div>
+    <div class="n-flex-email-subscribe" *ngIf="!isFormSubmitted">
+      <input
+        type="text"
+        placeholder="What's your email?"
+        class="n-whats-your-email"
+        [formControl]="email"
+      />
+      <button
+        class="n-subscribe"
         (click)="onSubscribe()"
-          [disabled]="
-            isLoading || isFormSubmitted || (email.invalid && email.dirty)
-          "
-        >
+        [disabled]="
+          isLoading || isFormSubmitted || (email.invalid && email.dirty)
+        "
+      >
         <span *ngIf="!isLoading">Subscribe</span>
-        <span *ngIf="isLoading">
-          Loading...
-        </span>
-      
+        <span *ngIf="isLoading"> Loading... </span>
       </button>
-       </div>
-       <div *ngIf="isFormSubmitted" class="n-thank-you">
-        Thank you for subscribing.
-       </div>
+    </div>
+    <div *ngIf="isFormSubmitted" class="n-thank-you">
+      Thank you for subscribing.
+    </div>
   </div>
-  <div style="background-image: url(assets/footer.png);" class="n-footer">
+  <div style="background-image: url(assets/footer.png)" class="n-footer">
     <div class="n-logo">
       <div
         class="n-website-logo"

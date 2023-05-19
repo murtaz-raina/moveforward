@@ -89,7 +89,7 @@
   max-width: 867.4px;
   font-family: "Maison Neue Extended TRIAL";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   line-height: 32px;
   display: flex;
@@ -98,6 +98,10 @@
   color: #ffffff;
   margin-left: 80px;
   margin-top: 32px;
+}
+.n-trace-description{
+  max-width: 448px !important;
+  width: 80% !important;
 }
 
 .n-learn-more {
@@ -254,28 +258,54 @@ column-gap: 4%;
   }
 }
 
-
-@media (max-width: 900px) {
-.n-container{
+@media (max-width: 1250px ) {
+  .n-container{
     .n-page-top{
         .n-logo{
-            margin-left: 80px;
+          margin-left: calc(10vw - 40px);
+            .n-website-logo-name{
+                width: 230px;
+            }
         }
         .n-page-heading{
-            margin-left: 80px;
+          margin-left: calc(10vw - 40px);
         }
         .n-arrow-down-container{
-            margin-left: 80px;
+          margin-left: calc(10vw - 40px);
         }
     }
     .n-description{
-        margin-left: 80px;
+      margin-left: calc(10vw - 40px);
+      width: 90%;
     }
-}
-.n-stay-tuned-for-me-container{
-    margin-left: 100px;
+    
 }
 
+.n-stay-tuned-for-me-container{
+  margin-left: calc(10vw - 40px);
+    
+}
+.n-footer{
+    .n-logo{
+      margin-left: calc(10vw - 40px);
+        
+    }
+    .n-footer-text{
+      margin-left: calc(10vw - 40px);
+    }
+}
+
+.n-copper-heading{
+  margin-left: calc(10vw - 40px);
+  width: 90%;
+}
+.n-copper-description{
+  margin-left: calc(10vw - 40px);
+  width: 90%;
+}
+.n-learn-more{
+  margin-left: calc(10vw - 40px);
+}
 }
 
 @media (max-width: 750px) {
@@ -315,15 +345,15 @@ column-gap: 4%;
         }
     }
     .n-flex-trance-loop{
-        // flex-direction: column;
-        gap: 4%;
+        flex-direction: column;
+        gap: 48px;
         width: 95%;
         .n-flex-trance{
-            width: 48%;
+            width: 100%;
             height: 300px;
         }
         .n-flex-loop{
-            width: 48%;
+            width: 100%;
             height: 300px;
         }
     }
@@ -374,11 +404,15 @@ column-gap: 4%;
         margin: 30px auto 0px;
     }
     .n-copper-description{
-        width: 95%;
+        width: 95% ;
         font-size: 11px;
         line-height: 20px;
         margin: 16px auto 0px;
         font-weight: 300;
+    }
+    .n-trace-description{
+      width: 95% !important;
+      max-width: 95% !important;
     }
     .n-learn-more{
         margin-left: 2.5%;
