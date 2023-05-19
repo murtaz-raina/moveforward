@@ -48,6 +48,9 @@ export class AppComponent {
   copper():void{
     window.open('https://hellocopper.ia', 'blank');
   }
+  chiefNet():void{
+    window.open('https://chiefnet.io', 'blank');
+  }
 
   navigateToContactUs = ()=>{
     const contactSection = this.elementRef.nativeElement.querySelector('#contact');
