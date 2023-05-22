@@ -1,4 +1,4 @@
-import { Component, ElementRef } from '@angular/core';
+import { Component, ElementRef,HostListener } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 import { REGEX_PATTERNS } from 'src/app/constants/constants';
 import { SharedService } from 'src/app/services/shared.service';
@@ -10,13 +10,14 @@ import { SharedService } from 'src/app/services/shared.service';
 })
 export class AppComponent {
   width = window.innerWidth;
-  title = 'moveforward-tech';
   email = new FormControl(null, [
     Validators.required,
     Validators.pattern(REGEX_PATTERNS.email),
   ]);
   isFormSubmitted = false;
   isLoading = false;
+  isWindowBelow550px: boolean = false;
+
   constructor(private sharedService: SharedService,private elementRef: ElementRef) {
     this.updateFormSubmittedStatus();
   }
@@ -56,4 +57,14 @@ export class AppComponent {
     const contactSection = this.elementRef.nativeElement.querySelector('#contact');
     contactSection.scrollIntoView({ behavior: 'smooth' });
   }
+
+ 
+   @HostListener('window:resize', ['$event'])
+  onWindowResize(event: any) {
+    this.isWindowBelow550px = window.innerWidth <= 550;
+  }
+  ngOnInit() {
+    this.isWindowBelow550px = window.innerWidth <= 550;
+  }
+
 }

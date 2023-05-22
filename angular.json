@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "moveforward-tech": {
+    "supertech-store": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/moveforward-tech",
+            "outputPath": "dist/supertech-store",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "moveforward-tech:build:production"
+              "browserTarget": "supertech-store:build:production"
             },
             "development": {
-              "browserTarget": "moveforward-tech:build:development"
+              "browserTarget": "supertech-store:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "moveforward-tech:build"
+            "browserTarget": "supertech-store:build"
           }
         },
         "test": {

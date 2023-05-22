@@ -3,17 +3,17 @@
     <div class="n-logo">
       <div
         class="n-website-logo"
-        style="background-image: url(assets/moveforward-icon.png)"
+        style="background-image: url(assets/images/supertech-icon.png)"
       >
         <img
           class="n-website-logo-splash"
-          src="assets/moveforward-icon-2.png"
+          src="assets/images/supertech-icon-2.png"
           alt="logo-splash"
         />
       </div>
       <img
         class="n-website-logo-name"
-        src="assets/moveforward.tech.png"
+        src="assets/images/supertech.store.png"
         alt="logoName"
       />
     </div>
@@ -23,8 +23,8 @@
       <br />
       And your budgets love.
     </div>
-    <div class="n-arrow-down-container">
-      <img class="n-arrow-down" src="assets/arrow-down.png" alt="arrow-down" />
+    <div class="n-arrow-down-container" *ngIf="!isWindowBelow550px">
+      <img class="n-arrow-down" src="assets/images/arrow-down.png" alt="arrow-down" />
     </div>
   </div>
   <div class="n-description" *ngIf="width > 750">
@@ -42,7 +42,7 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: 'assets/copper.png',
+        imageUrl: !isWindowBelow550px ? 'assets/images/copper.png':'assets/images/copper-mob.png',
         width: 1240,
         height: 668,
         margin: '106px auto 0px'
@@ -68,7 +68,7 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: 'assets/spot.png',
+        imageUrl: !isWindowBelow550px ? 'assets/images/spot.png':'assets/images/spot-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
@@ -93,7 +93,7 @@
   <div class="n-flex-trance-loop">
     <div
       class="n-flex-trance"
-      style="background-image: url(assets/traceline.png)"
+      style="background-image: url(assets/images/traceline.png)"
     >
       <div class="n-copper-heading">
         <u>Traceline</u>
@@ -107,7 +107,7 @@
       </div>
       <button class="n-learn-more" (click)="navigateToContactUs()">Contact Us</button>
     </div>
-    <div class="n-flex-loop" style="background-image: url(assets/loop.png)">
+    <div class="n-flex-loop" style="background-image: url(assets/images/loop.png)">
       <div class="n-copper-heading">
         <u>Loop</u>
       </div>
@@ -126,7 +126,7 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: 'assets/chiefNet.png',
+        imageUrl: !isWindowBelow550px ? 'assets/images/chiefNet.png': 'assets/images/chiefNet-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
@@ -148,7 +148,7 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: 'assets/private5G.png',
+        imageUrl: !isWindowBelow550px ? 'assets/images/private5G.png' : 'assets/images/private5G-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
@@ -187,7 +187,7 @@
           isLoading || isFormSubmitted || (email.invalid && email.dirty)
         "
       >
-        <span *ngIf="!isLoading">Subscribe</span>
+        <span *ngIf="!isLoading">Let us know</span>
         <span *ngIf="isLoading"> Loading... </span>
       </button>
     </div>
@@ -195,21 +195,21 @@
       Thank you for subscribing.
     </div>
   </div>
-  <div style="background-image: url(assets/footer.png)" class="n-footer">
+  <div style="background-image: url(assets/images/footer.png)" class="n-footer">
     <div class="n-logo">
       <div
         class="n-website-logo"
-        style="background-image: url(assets/moveforward-icon.png)"
+        style="background-image: url(assets/images/supertech-icon.png)"
       >
         <img
           class="n-website-logo-splash"
-          src="assets/moveforward-icon-2.png"
+          src="assets/images/supertech-icon-2.png"
           alt="logo-splash"
         />
       </div>
       <img
         class="n-website-logo-name"
-        src="assets/moveforward.tech.png"
+        src="assets/images/supertech.store.png"
         alt="logoName"
       />
     </div>

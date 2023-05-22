@@ -1,9 +1,9 @@
 .n-container {
   margin: auto;
   max-width: 1440px;
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   .n-page-top {
-    background-image: url("../assets/landing.png");
+    background-image: url(/assets/images/landing.png);
     width: 100%;
     min-height: 824px;
     background-size: 100% 100%;
@@ -98,7 +98,7 @@
   margin-left: 80px;
   margin-top: 32px;
 }
-.n-trace-description{
+.n-trace-description {
   max-width: 448px !important;
   width: 80% !important;
 }
@@ -106,7 +106,7 @@
 .n-learn-more {
   width: 206.12px;
   height: 56px;
-  background: #EDF2FC;;
+  background: #edf2fc;
   border-radius: 48px;
   margin-left: 80px;
   margin-top: 49px;
@@ -132,8 +132,8 @@
   max-width: 1240px;
   display: flex;
   flex-direction: row;
-//   gap: 24px;
-column-gap: 4%;
+  //   gap: 24px;
+  column-gap: 4%;
   margin: 48px auto 0px;
   flex-wrap: wrap;
   .n-flex-trance {
@@ -164,7 +164,7 @@ column-gap: 4%;
     letter-spacing: -0.015em;
     color: #000000;
   }
-  .n-thank-you{
+  .n-thank-you {
     font-family: "Maison Neue Extended TRIAL";
     font-style: normal;
     font-weight: 500;
@@ -256,171 +256,175 @@ column-gap: 4%;
   }
 }
 
-@media (max-width: 1250px ) {
-  .n-container{
-    .n-page-top{
-        .n-logo{
-          margin-left: calc(10vw - 40px);
-            .n-website-logo-name{
-                width: 230px;
-            }
+@media (max-width: 1250px) {
+  .n-container {
+    .n-page-top {
+      .n-logo {
+        margin-left: calc(10vw - 40px);
+        .n-website-logo-name {
+          width: 230px;
         }
-        .n-page-heading{
-          margin-left: calc(10vw - 40px);
-        }
-        .n-arrow-down-container{
-          margin-left: calc(10vw - 40px);
-        }
+      }
+      .n-page-heading {
+        margin-left: calc(10vw - 40px);
+      }
+      .n-arrow-down-container {
+        margin-left: calc(10vw - 40px);
+      }
     }
-    .n-description{
+    .n-description {
       margin-left: calc(10vw - 40px);
       width: 90%;
     }
-    
-}
+  }
 
-.n-stay-tuned-for-me-container{
-  margin-left: calc(10vw - 40px);
-    
-}
-.n-footer{
-    .n-logo{
-      margin-left: calc(10vw - 40px);
-        
-    }
-    .n-footer-text{
+  .n-stay-tuned-for-me-container {
+    margin-left: calc(10vw - 40px);
+  }
+  .n-footer {
+    .n-logo {
       margin-left: calc(10vw - 40px);
     }
-}
+    .n-footer-text {
+      margin-left: calc(10vw - 40px);
+    }
+  }
 
-.n-copper-heading{
-  margin-left: calc(10vw - 40px);
-  width: 90%;
-}
-.n-copper-description{
-  margin-left: calc(10vw - 40px);
-  width: 90%;
-}
-.n-learn-more{
-  margin-left: calc(10vw - 40px);
-}
+  .n-copper-heading {
+    margin-left: calc(10vw - 40px);
+    width: 90%;
+  }
+  .n-copper-description {
+    margin-left: calc(10vw - 40px);
+    width: 90%;
+  }
+  .n-learn-more {
+    margin-left: calc(10vw - 40px);
+  }
 }
 
 @media (max-width: 750px) {
-    .n-container{
-        .n-page-top{
-          height: auto;
-          min-height: fit-content;
-            .n-logo{
-                width: 90%;
-                margin: 100px auto 0px;
-                .n-website-logo-name{
-                    width: 230px;
-                }
-            }
-            .n-page-heading{
-                width: 90%;
-                margin :54px auto 0px;
-                font-size: 30px;
-                line-height: 50px;
-                min-height: fit-content;
-            }
-            .n-arrow-down-container{
-                width: 90%;
-                margin: 60px auto 100px;
-            }
+  .n-container {
+    .n-page-top {
+      height: auto;
+      min-height: fit-content;
+      background-image: url(/assets/images/landing-mob.png);
+      .n-logo {
+        width: 90%;
+        margin: 100px auto 0px;
+        .n-website-logo-name {
+          width: 230px;
         }
-        .n-description{
-            margin-top: 60px;
-            margin-left: auto;
-            margin-right: auto;
-            font-size: 15px;
-            line-height: 20px;
-            width: 80%;
-        }
-        .n-description-mob{
-          text-align: justify;
-        }
-    }
-    .n-flex-trance-loop{
-        flex-direction: column;
-        gap: 48px;
-        width: 95%;
-        .n-flex-trance{
-            width: 100%;
-            height: 300px;
-        }
-        .n-flex-loop{
-            width: 100%;
-            height: 300px;
-        }
-    }
-    .n-stay-tuned-for-me-container{
-      margin: 100px auto 0px;
-      width: 95%;
-        .n-stay-tuned-for-me{
-            font-size: 30px;
-            line-height: 40px;
-        }
-        .n-thank-you{
-          font-size: 18px;
-          line-height: 24px;
-        }
-        .n-flex-email-subscribe{
-            flex-direction: column;
-            row-gap: 28px;
-            .n-whats-your-email{
-                width: 100%;
-                box-sizing: border-box;
-            }
-            .n-subscribe{
-                width: 100%;
-            }
-        }
-    }
-    .n-footer{
-        height: auto;
-        .n-logo{
-          width: 95%;
-            margin: 400px auto 0px;
-            .n-website-logo-name{
-                width: 230px;
-            }
-        }
-        .n-footer-text{
-            width: 95%;
-            font-size: 17px;
-            line-height: 22px;
-            margin: 33px auto  50px;
-        }
-    }
-
-    .n-copper-heading{
-      width: 95%;
+      }
+      .n-page-heading {
+        width: 90%;
+        margin: 54px auto 200px;
         font-size: 30px;
-        line-height: 35px;
-        margin: 30px auto 0px;
+        line-height: 50px;
+        min-height: fit-content;
+      }
+      .n-arrow-down-container {
+        width: 90%;
+        margin: 60px auto 100px;
+      }
     }
-    .n-copper-description{
-        width: 95% ;
-        font-size: 15px;
-        line-height: 20px;
-        margin: 20px auto 0px;
-        font-weight: 300;
+    .n-description {
+      margin-top: 60px;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 15px;
+      line-height: 20px;
+      width: 80%;
     }
-    .n-trace-description{
-      width: 95% !important;
-      max-width: 95% !important;
+    .n-description-mob {
+      text-align: justify;
     }
-    .n-learn-more{
-        margin-left: 2.5%;
-        width: 100px;
-        height: 30px;
-        font-size: 12px;
-        line-height: 14px;
-        margin-top: 20px;
-        margin-bottom: 140px;
+  }
+  .n-flex-trance-loop {
+    flex-direction: column;
+    gap: 48px;
+    width: 95%;
+    .n-flex-trance {
+      width: 100%;
+      height: 300px;
     }
-    
+    .n-flex-loop {
+      width: 100%;
+      height: 300px;
+    }
+  }
+  .n-stay-tuned-for-me-container {
+    margin: 100px auto 0px;
+    width: 95%;
+    .n-stay-tuned-for-me {
+      font-size: 30px;
+      line-height: 40px;
+    }
+    .n-thank-you {
+      font-size: 18px;
+      line-height: 24px;
+    }
+    .n-flex-email-subscribe {
+      flex-direction: column;
+      row-gap: 28px;
+      .n-whats-your-email {
+        width: 100%;
+        box-sizing: border-box;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+      }
+      .n-subscribe {
+        width: 134px;
+        height: 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+      }
+    }
+  }
+  .n-footer {
+    height: auto;
+    .n-logo {
+      width: 95%;
+      margin: 400px auto 0px;
+      .n-website-logo-name {
+        width: 230px;
+      }
+    }
+    .n-footer-text {
+      width: 95%;
+      font-size: 17px;
+      line-height: 22px;
+      margin: 33px auto 50px;
+    }
+  }
 
+  .n-copper-heading {
+    width: 95%;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 48px auto 0px;
+  }
+  .n-copper-description {
+    width: 95%;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 20px auto 0px;
+    font-weight: 300;
+  }
+  .n-trace-description {
+    width: 95% !important;
+    max-width: 95% !important;
+  }
+  .n-learn-more {
+    margin-left: 2.5%;
+    width: 140px;
+    height: 40px;
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 20px;
+    margin-bottom: 109px;
+  }
 }
