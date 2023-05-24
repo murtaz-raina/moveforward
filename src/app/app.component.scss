@@ -306,7 +306,7 @@
 @media (max-width: 750px) {
   .n-container {
     .n-page-top {
-      height: auto;
+      height: 100dvh;
       min-height: fit-content;
       background-image: url(/assets/images/landing-mob.png);
       .n-logo {
