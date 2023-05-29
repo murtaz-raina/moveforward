@@ -306,7 +306,7 @@
 @media (max-width: 750px) {
   .n-container {
     .n-page-top {
-      height: 100dvh;
+      height: 100vh;
       min-height: fit-content;
       background-image: url(/assets/images/landing-mob.png);
       .n-logo {
@@ -402,24 +402,24 @@
   }
 
   .n-copper-heading {
-    width: 95%;
+    // width: 95%;
     font-size: 30px;
     line-height: 35px;
-    margin: 48px auto 0px;
+    margin: 48px 16px 0px;
   }
   .n-copper-description {
-    width: 95%;
+    // width: 95%;
     font-size: 15px;
     line-height: 20px;
-    margin: 20px auto 0px;
+    margin: 20px 16px 0px;
     font-weight: 300;
   }
-  .n-trace-description {
-    width: 95% !important;
-    max-width: 95% !important;
-  }
+  // .n-trace-description {
+  //   width: 95% !important;
+  //   max-width: 95% !important;
+  // }
   .n-learn-more {
-    margin-left: 2.5%;
+    margin-left: 16px;
     width: 140px;
     height: 40px;
     font-size: 12px;
