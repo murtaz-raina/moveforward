@@ -24,7 +24,11 @@
       And your budgets love.
     </div>
     <div class="n-arrow-down-container" *ngIf="!isWindowBelow550px">
-      <img class="n-arrow-down" src="assets/images/arrow-down.png" alt="arrow-down" />
+      <img
+        class="n-arrow-down"
+        src="assets/images/arrow-down.png"
+        alt="arrow-down"
+      />
     </div>
   </div>
   <div class="n-description" *ngIf="width > 750">
@@ -42,7 +46,9 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: !isWindowBelow550px ? 'assets/images/copper.png':'assets/images/copper-mob.png',
+        imageUrl: !isWindowBelow550px
+          ? 'assets/images/copper.png'
+          : 'assets/images/copper-mob.png',
         width: 1240,
         height: 668,
         margin: '106px auto 0px'
@@ -68,7 +74,9 @@
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: !isWindowBelow550px ? 'assets/images/spot.png':'assets/images/spot-mob.png',
+        imageUrl: !isWindowBelow550px
+          ? 'assets/images/spot.png'
+          : 'assets/images/spot-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
@@ -86,14 +94,20 @@
         ensuring your organization stays one step ahead in the ever-evolving
         threat landscape. All these, while being light on your wallet.
       </div>
-      <button class="n-learn-more" (click)="navigateToContactUs()">Learn More</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Learn More
+      </button>
     </app-card>
   </div>
 
   <div class="n-flex-trance-loop">
     <div
       class="n-flex-trance"
-      style="background-image: url(assets/images/traceline.png)"
+      [ngStyle]="{
+        'background-image': !isWindowBelow550px
+          ? 'url(assets/images/traceline.png)'
+          : 'url(assets/images/traceline-mob.png)'
+      }"
     >
       <div class="n-copper-heading">
         <u>Traceline</u>
@@ -105,28 +119,41 @@
         visibility into your production workflow, streamline operations, and
         enhance efficiency. -->
       </div>
-      <button class="n-learn-more" (click)="navigateToContactUs()">Contact Us</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Contact Us
+      </button>
     </div>
-    <div class="n-flex-loop" style="background-image: url(assets/images/loop.png)">
+    <div
+      class="n-flex-loop"
+      [ngStyle]="{
+        'background-image': !isWindowBelow550px
+          ? 'url(assets/images/loop.png)'
+          : 'url(assets/images/loop-mob.png)'
+      }"
+    >
       <div class="n-copper-heading">
         <u>Loop</u>
       </div>
       <div class="n-copper-description n-trace-description">
         Revolutionize your water management practices with Loop.
-         <!-- Experience
+        <!-- Experience
         unparalleled transparency and real-time visibility of water consumption,
         while promoting sustainability and conservation. Unlock cost savings,
         optimize resource allocation, and contribute to a greener future with
         Loop. -->
       </div>
-      <button class="n-learn-more" (click)="navigateToContactUs()">Contact Us</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Contact Us
+      </button>
     </div>
   </div>
 
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: !isWindowBelow550px ? 'assets/images/chiefNet.png': 'assets/images/chiefNet-mob.png',
+        imageUrl: !isWindowBelow550px
+          ? 'assets/images/chiefNet.png'
+          : 'assets/images/chiefNet-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
@@ -145,27 +172,68 @@
       <button class="n-learn-more" (click)="chiefNet()">Learn More</button>
     </app-card>
   </div>
+  <div class="n-flex-trance-loop">
+    <div
+      class="n-flex-trance"
+      [ngStyle]="{
+        'background-image': !isWindowBelow550px
+          ? 'url(assets/images/mobydoctor.png)'
+          : 'url(assets/images/mobydoctor-mob.png)'
+      }"
+    >
+      <div class="n-copper-heading">
+        <u>MobyDoctor</u>
+      </div>
+      <div class="n-copper-description n-trace-description">
+        Cloud based EHR platform for rural health.
+      </div>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Contact Us
+      </button>
+    </div>
+    <div
+      class="n-flex-loop"
+      [ngStyle]="{
+        'background-image': !isWindowBelow550px
+          ? 'url(assets/images/aeropass.png)'
+          : 'url(assets/images/aeropass-mob.png)'
+      }"
+    >
+      <div class="n-copper-heading">
+        <u>AeroPass</u>
+      </div>
+      <div class="n-copper-description n-trace-description">
+        Seamless, fast, secure Wi-fi onboarding for modern Airports.
+      </div>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Contact Us
+      </button>
+    </div>
+  </div>
   <div>
     <app-card
       [cardContent]="{
-        imageUrl: !isWindowBelow550px ? 'assets/images/private5G.png' : 'assets/images/private5G-mob.png',
+        imageUrl: !isWindowBelow550px
+          ? 'assets/images/mavro.png'
+          : 'assets/images/mavro-mob.png',
         width: 1240,
         height: 668,
         margin: '48px auto 0px'
       }"
     >
       <div class="n-copper-heading">
-        <u>Private 5G</u> : For Industry 4.0. <br *ngIf="width > 1100" />
-        Revolutionize.
+        <u>Mavro</u> : Modern choice for medium size <br *ngIf="width > 1100" />
+        enterprises running SAP.
       </div>
       <div class="n-copper-description">
-        Experience lightning-fast speeds, ultra-low latency, and robust security
-        as you revolutionize your industrial operations. Unleash the full
-        potential of automation, IoT, and advanced analytics with our
-        state-of-the-art Private 5G, paving the way for a smarter, more
-        efficient future.
+        Accelerate growth. Improve productivity. Save costs. And get usable
+        insights with Mavro. It’s a new age framework for enabling businesses
+        that run on SAP just do all that. And more. It’s a modern(and obvious)
+        choice for mastering the digital.
       </div>
-      <button class="n-learn-more" (click)="navigateToContactUs()">Learn More</button>
+      <button class="n-learn-more" (click)="navigateToContactUs()">
+        Learn More
+      </button>
     </app-card>
   </div>
   <div class="n-stay-tuned-for-me-container" id="contact">
